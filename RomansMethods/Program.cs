@@ -1,4 +1,5 @@
-﻿// --------------------safe input number
+﻿/*
+// --------------------safe input number
 int inputNumberPrompt(string str)
 {
     int number;
@@ -40,7 +41,7 @@ double inputNumberPromptDouble(string str)
 }
 
 // --------------------fill ARRAY int numbers
-void arrayFill(int[,] arr, int left, int right)
+void ArrayFillInt(int[,] arr, int left, int right)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
     {
@@ -60,13 +61,13 @@ int GetRandomFrom(int bottom, int top)
 }
 
 // --------------------fill ARRAY double
-void arrayFill(double[,] arr, int left, int right, int digits)
+void ArrayFillDouble(double[,] arr, int left, int right, int digits)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-            arr[i, j] = Math.Round(GetRandomFrom(left, right), digits);
+            arr[i, j] = (double) Math.Round(GetRandomFrom(left, right), digits);
         }
     }
 }
@@ -92,3 +93,4 @@ void printArray(double[,] arr)
         System.Console.WriteLine();
     }
 }
+*/
